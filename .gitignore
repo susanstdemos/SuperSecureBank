@@ -21,7 +21,6 @@ Libraries/
 *.suo
 *.tlb
 *.tlh
-*.bak
 *.cache
 *.ilk
 *.log
