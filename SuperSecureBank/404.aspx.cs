@@ -13,12 +13,12 @@ namespace SuperSecureBank
 		protected void Page_Load(object sender, EventArgs e)
 		{
             try{
-			if (!string.IsNullOrWhiteSpace(Request["AttemptedUrl"]))
+                if (!string.IsNullOrWhiteSpace(Request["aspxerrorpath"]))
 			{
-				if (File.Exists(Request["AttemptedUrl"]))
+                if (File.Exists(Request["aspxerrorpath"]))
 					message.Text = "You do not have permissions to view that file";
 				else
-					message.Text = string.Format("The file - {0} - doesn't exist", Request["AttemptedUrl"]);
+                    message.Text = string.Format("The file - {0} - doesn't exist", Request["aspxerrorpath"]);
 			}
             }
             catch (Exception ex)
