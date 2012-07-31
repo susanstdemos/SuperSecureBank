@@ -19,7 +19,7 @@ namespace SuperSecureBank
 				{
 					Int64 userID = UserMgmt.LookupSession(Request.Cookies[Settings.Default.SessionCookieKey].Value);
 					if (0 == userID)
-						Response.Redirect("Account/Login.aspx?ReturnUrl=/ApplyForAccount.aspx");
+						Response.Redirect("Account/Login.aspx?ReturnUrl=ApplyForAccount.aspx");
 				}
 			}
 			catch (Exception ex)
