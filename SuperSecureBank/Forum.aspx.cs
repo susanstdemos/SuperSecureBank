@@ -18,7 +18,7 @@ namespace SuperSecureBank
 			if (null != Request.Cookies[Settings.Default.SessionCookieKey])
 			{
 				if (0 == UserMgmt.LookupSession(Request.Cookies[Settings.Default.SessionCookieKey].Value))
-					Response.Redirect("Account/Login.aspx?ReturnUrl=/Forum.aspx");
+					Response.Redirect("Account/Login.aspx?ReturnUrl=Forum.aspx");
 			}
 		}
 
