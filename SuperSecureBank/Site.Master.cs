@@ -25,7 +25,7 @@ namespace SuperSecureBank
                 {
                     Int64 UserID = UserMgmt.LookupSession(Request.Cookies[Settings.Default.SessionCookieKey].Value);
                     LoginInfo.Text = "Welcome to the world of secure banking, " + UserMgmt.LookupUsername(UserID) + "!<br />" +
-                                                        "<a href=\"/Logout.aspx\">Log out</a>";
+                                                        "<a href=\"Logout.aspx\">Log out</a>";
                 }
             }
             catch (Exception ex)
